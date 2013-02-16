@@ -1,0 +1,12 @@
+---
+layout: layout
+title: categories
+---
+
+<h2>Categories</h2>
+{% for category in site.categories %}
+  {% assign name = category[0] %}
+  <div class="category">
+    <h3><a href="/categories/{{ name }}">{{ name }}</a></h3>
+  </div>
+{% endfor %}
